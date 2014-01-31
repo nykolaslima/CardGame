@@ -7,10 +7,14 @@
 //
 
 #import "CardGameViewController.h"
+#import "PlayingCardDeck.h"
 
 @interface CardGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
+@property (strong, nonatomic) PlayingCardDeck *deck;
+
+- (NSString *) getTitle:(Card *) card;
 @end
 
 @implementation CardGameViewController
@@ -21,6 +25,10 @@
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender {
+    if (!_deck) {
+        _deck = [[PlayingCardDeck alloc] init];
+    }
+    
     if ([sender.currentTitle length]) {
         [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
                           forState:UIControlStateNormal];
@@ -28,9 +36,21 @@
     } else {
         [sender setBackgroundImage:[UIImage imageNamed:@"whiteCard"]
                           forState:UIControlStateNormal];
-        [sender setTitle:@"A♣︎" forState:UIControlStateNormal];
+        Card* card = [_deck drawRandomCard];
+        [sender setTitle:[self getTitle:card]
+                forState:UIControlStateNormal];
     }
     self.flipCount++;
+}
+
+- (NSString *) getTitle:(Card *)card
+{
+    NSString* title = @"=(";
+    if (card) {
+        title = card.contents;
+    }
+    
+    return title;
 }
 
 @end
