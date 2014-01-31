@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4658063189B2321003DAE49 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = C4658062189B2321003DAE49 /* Card.m */; };
 		C4A065101899DE52000B6317 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A0650F1899DE52000B6317 /* Foundation.framework */; };
 		C4A065121899DE52000B6317 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A065111899DE52000B6317 /* CoreGraphics.framework */; };
 		C4A065141899DE52000B6317 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A065131899DE52000B6317 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4658061189B2321003DAE49 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Domain/Model/Card.h; sourceTree = "<group>"; };
+		C4658062189B2321003DAE49 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Domain/Model/Card.m; sourceTree = "<group>"; };
 		C4A0650C1899DE52000B6317 /* CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A0650F1899DE52000B6317 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C4A065111899DE52000B6317 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C465805F189B22F1003DAE49 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C4658060189B22FC003DAE49 /* Model */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		C4658060189B22FC003DAE49 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4658061189B2321003DAE49 /* Card.h */,
+				C4658062189B2321003DAE49 /* Card.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		C4A065031899DE52000B6317 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +132,7 @@
 		C4A065151899DE52000B6317 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
+				C465805F189B22F1003DAE49 /* Domain */,
 				C4A065211899DE52000B6317 /* Main.storyboard */,
 				C4A065241899DE52000B6317 /* CardGameViewController.h */,
 				C4A065251899DE52000B6317 /* CardGameViewController.m */,
@@ -253,6 +274,7 @@
 				C4A065201899DE52000B6317 /* CardGameAppDelegate.m in Sources */,
 				C4A065261899DE52000B6317 /* CardGameViewController.m in Sources */,
 				C4A0651C1899DE52000B6317 /* main.m in Sources */,
+				C4658063189B2321003DAE49 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +483,7 @@
 				C4A065401899DE52000B6317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4A065411899DE52000B6317 /* Build configuration list for PBXNativeTarget "CardGameTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +492,7 @@
 				C4A065431899DE52000B6317 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
