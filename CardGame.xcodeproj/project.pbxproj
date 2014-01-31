@@ -112,8 +112,6 @@
 		C4A065151899DE52000B6317 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
-				C4A0651E1899DE52000B6317 /* CardGameAppDelegate.h */,
-				C4A0651F1899DE52000B6317 /* CardGameAppDelegate.m */,
 				C4A065211899DE52000B6317 /* Main.storyboard */,
 				C4A065241899DE52000B6317 /* CardGameViewController.h */,
 				C4A065251899DE52000B6317 /* CardGameViewController.m */,
@@ -126,6 +124,8 @@
 		C4A065161899DE52000B6317 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C4A0651E1899DE52000B6317 /* CardGameAppDelegate.h */,
+				C4A0651F1899DE52000B6317 /* CardGameAppDelegate.m */,
 				C4A065171899DE52000B6317 /* CardGame-Info.plist */,
 				C4A065181899DE52000B6317 /* InfoPlist.strings */,
 				C4A0651B1899DE52000B6317 /* main.m */,
