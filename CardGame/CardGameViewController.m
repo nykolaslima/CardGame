@@ -12,7 +12,7 @@
 @interface CardGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
-@property (strong, nonatomic) PlayingCardDeck *deck;
+@property (strong, nonatomic) Deck *deck;
 
 - (NSString *) getTitle:(Card *) card;
 @end
