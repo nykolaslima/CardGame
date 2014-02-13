@@ -18,6 +18,21 @@
     return [rankStrings[self.rank] stringByAppendingString:self.suit];
 }
 
+- (int)match:(NSArray *)cards
+{
+    int score = 0;
+    if ([cards count] > 1) return score;
+    
+    PlayingCard *otherCard = [cards firstObject];
+    if (otherCard.rank == self.rank) {
+        score = 4;
+    } else if ([otherCard.suit isEqualToString:self.suit]) {
+        score = 1;
+    }
+    
+    return score;
+}
+
 - (NSString *) suit
 {
     return _suit ? _suit : @"?";
