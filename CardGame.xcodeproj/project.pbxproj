@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40253BF18A9AAF200631D4A /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = C40253BE18A9AAF200631D4A /* CardMatchingGame.m */; };
 		C4658063189B2321003DAE49 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = C4658062189B2321003DAE49 /* Card.m */; };
 		C4658067189B2688003DAE49 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = C4658066189B2688003DAE49 /* Deck.m */; };
 		C465806A189B33B0003DAE49 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = C4658069189B33B0003DAE49 /* PlayingCard.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C40253BD18A9AAF200631D4A /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Domain/Model/CardMatchingGame.h; sourceTree = "<group>"; };
+		C40253BE18A9AAF200631D4A /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Domain/Model/CardMatchingGame.m; sourceTree = "<group>"; };
 		C4658061189B2321003DAE49 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Domain/Model/Card.h; sourceTree = "<group>"; };
 		C4658062189B2321003DAE49 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Domain/Model/Card.m; sourceTree = "<group>"; };
 		C4658065189B2688003DAE49 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Domain/Model/Deck.h; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				C4658069189B33B0003DAE49 /* PlayingCard.m */,
 				C465806B189B3B96003DAE49 /* PlayingCardDeck.h */,
 				C465806C189B3B96003DAE49 /* PlayingCardDeck.m */,
+				C40253BD18A9AAF200631D4A /* CardMatchingGame.h */,
+				C40253BE18A9AAF200631D4A /* CardMatchingGame.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				C4658067189B2688003DAE49 /* Deck.m in Sources */,
 				C4A065201899DE52000B6317 /* CardGameAppDelegate.m in Sources */,
 				C4A065261899DE52000B6317 /* CardGameViewController.m in Sources */,
+				C40253BF18A9AAF200631D4A /* CardMatchingGame.m in Sources */,
 				C465806D189B3B96003DAE49 /* PlayingCardDeck.m in Sources */,
 				C4A0651C1899DE52000B6317 /* main.m in Sources */,
 				C4658063189B2321003DAE49 /* Card.m in Sources */,
