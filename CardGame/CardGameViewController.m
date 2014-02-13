@@ -14,6 +14,7 @@
 @property (strong, nonatomic) Deck *deck;
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 - (void)updateUI;
 - (NSString *)getTitleForCard:(Card *)card;
@@ -37,6 +38,7 @@
         if (card.isMatched) {
             cardButton.enabled = false;
         }
+        self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d", self.game.score];
     }
 }
 
