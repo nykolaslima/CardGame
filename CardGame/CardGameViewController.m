@@ -64,7 +64,7 @@
 - (Deck *)deck
 {
     if (!_deck) {
-        _deck = [[Deck alloc] init];
+        _deck = [[PlayingCardDeck alloc] init];
     }
     
     return _deck;
