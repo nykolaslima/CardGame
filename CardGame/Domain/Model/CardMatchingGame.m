@@ -44,7 +44,6 @@
     return self;
 }
 
-#define MISMATCH_PENALTY 2
 #define COST_TO_CHOOSE 1
 - (void)chooseCardAtIndex:(NSUInteger)index
 {
@@ -54,8 +53,6 @@
         if (!card.isChosen) {
             card.chosen = NO;
         } else {
-            self.score -= COST_TO_CHOOSE;
-            card.chosen = YES;
             [self matchCardsWithCard:card];
         }
     }
@@ -70,13 +67,17 @@
     }
 }
 
+#define MATCH_BONUS 4
+#define MISMATCH_PENALTY 2
 - (void)matchCardsWithCard:(Card *)card
 {
+    self.score -= COST_TO_CHOOSE;
+    card.chosen = YES;
     for (Card *otherCard in self.cards) {
         if (otherCard.isChosen && !otherCard.isMatched) {
             int matchScore = [card match:@[otherCard]];
             if (matchScore) {
-                self.score += matchScore;
+                self.score += matchScore * MATCH_BONUS;
                 card.matched = YES;
                 otherCard.matched = YES;
             } else {
