@@ -26,6 +26,7 @@
 - (IBAction)touchCardButton:(UIButton *)sender {
     int choosenCardIndex = [self.cardButtons indexOfObject:sender];
     [self.game chooseCardAtIndex:choosenCardIndex];
+    [self updateUI];
 }
 
 - (void)updateUI

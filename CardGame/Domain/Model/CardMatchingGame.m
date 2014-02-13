@@ -50,7 +50,7 @@
     Card *card = [self cardAtIndex:index];
     
     if (!card.isMatched) {
-        if (!card.isChosen) {
+        if (card.isChosen) {
             card.chosen = NO;
         } else {
             [self matchCardsWithCard:card];
